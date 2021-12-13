@@ -91,10 +91,10 @@ L3 = [1,11,15,72,96,150,163,167,208,217]
 L4 = [22,24,31,35]
 dice_score =[]
 
-for img_number in L4 :
+for img_number in L1 :
 
-    cadena = '{0:02d}'.format(img_number) # Use the format 0:03d for L1,L2,L3 
-    path = 'data/log4/'+str(cadena)+'-rgb.png' 
+    cadena = '{0:03d}'.format(img_number) # Use the format 0:02d for L4 
+    path = 'data/log1/'+str(cadena)+'-rgb.png' 
     img2 = cv2.imread(path)
     print(path)
     #cv2.imshow('Image initiale',img2)
@@ -143,8 +143,8 @@ for img_number in L4 :
     image = cv2.cvtColor(image_gray, cv2.COLOR_GRAY2RGB)
 
 
-    path_result = 'data_result/log4/'+str(cadena)+'-rgb_result.png'
-    path_test = 'mask-field/log4/'+str(cadena)+'-rgb.png'
+    path_result = 'data_result/log1/'+str(cadena)+'-rgb_result.png'
+    path_test = 'mask-field/log1/'+str(cadena)+'-rgb.png'
     cv2.imwrite(path_result,image)
     image_test = cv2.imread(path_test)
 
