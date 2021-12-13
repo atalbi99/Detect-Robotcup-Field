@@ -16,6 +16,6 @@ Pour tester le résultat sur les images du log4:
 
 ```
 Remplacez L1 (ligne 94) par L4.
-Remplacez 0:03d par 0:02d.
+Remplacez 0:03d (ligne 96) par 0:02d.
 Remplacez log1 des lignes 146 et 147 par log4.
 ```
